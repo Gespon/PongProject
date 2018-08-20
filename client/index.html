@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Pong</title>
+</head>
+
+<body>
+  <main id="main">
+    <div id="auth">
+      <p id="infoMessage"></p>
+      <label for="username">Username</label>
+      <input id="username" type="text">
+      <label for="password">Password</label>
+      <input id="password" type="password">
+      <button type="button" class="btn" id="logButton">Login</button>
+      <button type="button" class="btn" id="regButton">Register</button>
+    </div>
+    <div id="hub">
+      <div class="right">
+        <button id="logout" class="btn">Logout</button>
+      </div>
+      Welcome
+      <hr>
+      <button id="newroom" class="btn">Generate New Room</button>
+      <button id="joinroom" class="btn">Join Room</button>
+    </div>
+    <div id="waitingForPartner">
+      Witing for your partner to connect!
+      <button id="cancelRoom" class="btn">Cancel</button>
+    </div>
+    <div id="game">
+      <canvas id="canvas"></canvas>
+    </div>
+  </main>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="renderer.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
