@@ -1,2 +1,0 @@
-# PongProject
-Pong online game
