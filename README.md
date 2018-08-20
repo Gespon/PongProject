@@ -7,7 +7,7 @@ When a user creates a room, its unique ID will be displayed via an alert message
 The other person then clicks on 'Join Room' and enters the room ID via the prompt. The host (person who created the room) is always on the left, and the guest is always on the right.
 The game is played until one of the players reaches a score of 3, after which they are both returned to the main screen.
 
-## Libraries used:
+## Dependencies used:
 - Express
 - Socket.io
 - Sqlite3
